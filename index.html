@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="display">
+            <div class="parda" id="parda"></div>
+            <input type="text" id="inp" placeholder="Enter Value.....">
+            <div class="me-value" id="mVal">M : </div>
+        </div>
+        <div class="onoff"><button id="btn" onclick="displayOff()">On</button></div>
+
+        <div class="memory-div">
+            <button class="memory" id="mClear" onclick="clearMemory()">MC</button>
+            <button class="memory" id="mSave" onclick="callMemory()">MR</button>
+            <button class="memory" onclick="addMemoryPlus()">M+</button>
+            <button class="memory" onclick="addmemoryMinus()">M-</button>
+            <button class="memory" onclick="changeOpr()">-/+</button>
+        </div>
+        <div class="bottons">
+            <button class="btns new-color" onclick="clearField()">AC</button>
+            <button class="btns new-color" onclick="add('%')">%</button>
+            <button class="btns new-color" onclick="delField()">Del</button>
+            <button class="btns new-color" onclick="add('/')">/</button>
+            <button class="btns" onclick="add(7)">7</button>
+            <button class="btns" onclick="add(8)">8</button>
+            <button class="btns" onclick="add(9)">9</button>
+            <button class="btns new-color" onclick="add('*')">*</button>
+            <button class="btns " onclick="add(4)">4</button>
+            <button class="btns" onclick="add(5)">5</button>
+            <button class="btns" onclick="add(6)">6</button>
+            <button class="btns new-color" onclick="add('-')">-</button>
+            <button class="btns" onclick="add(1)">1</button>
+            <button class="btns" onclick="add(2)">2</button>
+            <button class="btns" onclick="add(3)">3</button>
+            <button class="btns new-color" onclick="add('+')">+</button>
+            <button class="btns" onclick="add('00')">00</button>
+            <button class="btns" onclick="add(0)">0</button>
+            <button class="btns" onclick="add('.')">.</button>
+            <button class="btns green-color" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

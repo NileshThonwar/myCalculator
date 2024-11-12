@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e8e6e6;
+}
+
+.container {
+    box-shadow: inset 5px 5px 5px 3px grey, inset -5px -5px 5px 3px grey;
+    background-color: #bfbfbf;
+    margin: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    padding: 20px;
+    height: 460px;
+}
+
+.display {
+    position: relative;
+}
+
+.display input {
+    border: 2px solid black;
+    height: 80px;
+    width: 216px;
+    font-size: 22px;
+    text-align: right;
+    padding: 2px 5px;
+    background-color: #8fa16f;
+    font-weight: bold;
+    box-shadow: inset 2px 2px 1px black, inset -2px -2px 1px black;
+}
+
+.parda {
+    height: 80px;
+    width: 216px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+.bottons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.btns {
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    height: 45px;
+    width: 45px;
+    font-weight: 700;
+    box-shadow: inset -2px -2px 2px 2px grey, inset 2px 2px 2px 2px grey;
+}
+
+.btns:active {
+    background-color: white;
+}
+
+.onoff {
+    height: 50px;
+}
+
+#btn {
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.new-color {
+    background-color: orange;
+    color: white;
+    box-shadow: inset -2px -2px 2px 2px darkorange, inset 2px 2px 2px 2px darkorange;
+}
+
+#mClear {
+    background-color: #ff7d7d;
+}
+
+.green-color:active {
+    background-color: lightgreen;
+}
+
+.new-color:active {
+    background-color: #7474eb;
+}
+
+.memory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    height: 25px;
+    padding: 5px 8px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    text-align: center;
+    box-sizing: border-box;
+    width: 33px;
+}
+
+.memory-div {
+    padding: 10px 0px;
+    box-sizing: border-box;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.memory:active {
+    background-color: darkred;
+}
+
+.green-color {
+    background-color: green;
+    color: white;
+    box-shadow: inset -2px -2px 2px 2px darkgreen, inset 2px 2px 2px 2px darkgreen;
+}
+
+.me-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    font-size: 10px;
+
+}
+
+@media only screen and (max-width: 455px) {
+    body {
+        display: flex;
+    }
+}
